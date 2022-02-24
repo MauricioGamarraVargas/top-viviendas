@@ -3,7 +3,6 @@ import { Text } from 'react-native';
 import { Colors, Size } from '../../constants/Styles';
 
 const Title = (props) => {
-  console.log(props)
   return (
     <Text style={[styles.titleStyle, props.style]}>{props.title}</Text>
   );
