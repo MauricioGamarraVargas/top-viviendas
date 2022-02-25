@@ -8,8 +8,8 @@ const TextInput = (props) => {
     <View style={[props.containerStyle, styles.containerStyle]}>
       <Input 
         {...props}
-        inputStyle={[props.inputStyle, styles.inputStyle]}
-        labelStyle={[props.labelStyle, styles.labelStyle]}
+        inputStyle={[styles.inputStyle, props.inputStyle]}
+        labelStyle={[styles.labelStyle, props.labelStyle]}
         leftIconContainerStyle={[props.leftIconContainerStyle, styles.leftIconContainerStyle]}
         rightIconContainerStyle={[props.rightIconContainerStyle, styles.rightIconContainerStyle]}
         placeholderTextColor={props.placeholderTextColor? props.placeholderTextColor : Colors.primaryText}

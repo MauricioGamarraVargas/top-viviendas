@@ -8,7 +8,7 @@ const Button = (props) => {
     <TouchableOpacity style={[styles.buttonStyle, props.style]}>
       <View>
         {props.icon}
-        <Title style={[styles.textStyle, props.textStyle]} title={props.children}/>
+        <Title style={[styles.textStyle, props.textStyle]}>{props.children}</Title>
       </View>
     </TouchableOpacity>
   );
