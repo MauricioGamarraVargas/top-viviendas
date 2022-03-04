@@ -14,6 +14,7 @@ export const Colors = {
   primaryGray: "#707070",
   primaryWhite: "#ffffff",
   secundaryGray: "#4e4e4e",
+  secundaryGreen: "#359444",
   headerBlue: '#0587ff',
   disable: '#595959',
   primaryTextInverse: '#ededed',

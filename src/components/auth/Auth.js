@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Text } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { Colors } from '../../constants/Styles';
 import LoginEmail from './LoginEmail';
@@ -10,7 +10,7 @@ const Auth = () => {
     <View style={styles.container}>  
     <ScrollView>
       <View style={styles.loginEmailStyle}>
-        <LoginEmail />  
+        <LoginEmail />
       </View>
     </ScrollView>
       <SkipLogin/>
