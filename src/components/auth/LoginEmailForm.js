@@ -71,7 +71,7 @@ const styles = {
   inputStyle: {
     fontSize: Size.descriptionCard,
     fontWeight: FontWeight.descriptionCard,
-    color: Colors.secondaryText
+    color: Colors.primaryText 
   },
   placeholderStyle:{
     placeholderTextColor:'blue'

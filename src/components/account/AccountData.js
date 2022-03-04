@@ -26,7 +26,7 @@ const AccountData = () => {
 const styles = {
   imageContainerStyle: {
     alignItems: 'center',
-    margin: 20
+    margin: 35
   },
   nameContainer: {
     alignItems: 'center',
