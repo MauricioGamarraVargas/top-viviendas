@@ -1,19 +1,23 @@
+import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 import { Colors } from '../../constants/Styles';
-import { Button } from "../common";
+import { Title } from "../common";
+//import { Button } from "../common";
 import AccountData from './AccountData';
 
-const Account = () => {
+const Account = ({navigation}) => {
   return(
     <View style={styles.container}>
       <AccountData />
       <View style={styles.containerButtonStyle}>
-        <Button>Editar cuenta</Button>
+        <Button 
+          title="Move screen"
+          onPress={() => navigation.navigate("PerfilTemp")} />
       </View>
-      <View style={styles.containerButtonStyle}>
+      {/* <View style={styles.containerButtonStyle}>
         <Button style={styles.signOutButtonStyle} textStyle={styles.textStyle}>Cerrar sesión </Button>
-      </View>
+      </View> */}
     </View>
   );
 }
