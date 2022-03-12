@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image,  SafeAreaView, ScrollView } from 'react-native';
 import LoginEmailForm from './LoginEmailForm';
 
-const LoginEmail = () => {
+const LoginEmail = (props) => {
   return(
     <View style={styles.container}>
       <View style={styles.imageContainer}>
@@ -10,7 +10,7 @@ const LoginEmail = () => {
           source={require('../../../assets/images/logo.png')}
         />
       </View>
-      <LoginEmailForm />
+      <LoginEmailForm navigation={props.navigation}/>
     </View>
   );
 }

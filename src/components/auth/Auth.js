@@ -5,12 +5,12 @@ import { Colors } from '../../constants/Styles';
 import LoginEmail from './LoginEmail';
 import SkipLogin from './SkipLogin';
 
-const Auth = () => {
+const Auth = (props) => {
   return(
     <View style={styles.container}>  
     <ScrollView>
       <View style={styles.loginEmailStyle}>
-        <LoginEmail />
+        <LoginEmail navigation={props.navigation} />
       </View>
     </ScrollView>
       <SkipLogin/>

@@ -5,14 +5,31 @@ import { Formik } from "formik";
 import { Colors, Size,FontWeight, Padding } from '../../constants/Styles';
 import { TextInput, Button } from '../common';
 
-const LoginEmailForm = () => {
-  
-  const signInSignUpButtonUser = (props) => {
+const LoginEmailForm = (props) => {
+  const {navigation} = props;
+  const signInSignUpButtonUser = () => {
     return(
       <View>
-        <Button style={styles.forgotPasswordButtonStyle} textStyle={styles.forgotPasswordTextStyle}>Olvidaste tu contraseña?</Button>
-        <Button style={styles.buttonStyle}>Continuar</Button>
-        <Button style={styles.forgotPasswordButtonStyle} textStyle={styles.forgotPasswordTextStyle}>Crear cuenta nueva</Button>
+        <Button 
+          style={styles.forgotPasswordButtonStyle} 
+          textStyle={styles.forgotPasswordTextStyle}
+          onPress= {() => navigation.navigate("home") }
+        >
+          Olvidaste tu contraseña?
+        </Button>
+        <Button 
+          style={styles.buttonStyle}
+          onPress= {() => navigation.navigate("home") }
+        >
+          Continuar
+        </Button>
+        <Button 
+          style={styles.forgotPasswordButtonStyle} 
+          textStyle={styles.forgotPasswordTextStyle}
+          onPress= {() => navigation.navigate("home")}
+        >
+          Crear cuenta nueva
+        </Button>
       </View>
     );
   }

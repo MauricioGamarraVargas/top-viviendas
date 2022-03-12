@@ -5,7 +5,7 @@ import { Title } from './Title';
 
 const Button = (props) => {
   return (
-    <TouchableOpacity style={[styles.buttonStyle, props.style]}>
+    <TouchableOpacity onPress={props.onPress} style={[styles.buttonStyle, props.style]}>
       <View>
         {props.icon}
         <Title style={[styles.textStyle, props.textStyle]}>{props.children}</Title>

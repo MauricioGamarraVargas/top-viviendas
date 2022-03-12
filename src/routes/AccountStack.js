@@ -16,13 +16,6 @@ const AccountStack = () => {
           title: 'Perfil', 
         }}
       />
-      <Stack.Screen 
-        name="PerfilTemp"
-        component={AccountTempScreen}
-        options={{
-          title: 'Perfil Temporal',
-        }}
-      />
     </Stack.Navigator>
   );
 }

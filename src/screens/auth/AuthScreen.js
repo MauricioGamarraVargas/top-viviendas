@@ -1,15 +1,11 @@
 import React, {Component} from "react";
 import { View, Text } from "react-native";
-import AuthTemp from "../../components/auth/AuthTemp";
+import Auth from "../../components/auth/Auth";
 
-class AuthScreen extends Component {
-  render() {
-    return(
-      <View>
-        <AuthTemp navigation={this.props.navigation}/>
-      </View>
-    )
-  }
+const AuthScreen  = (props) => {
+  return (
+    <Auth navigation={props.navigation}/>
+  );
 }
 
 export default AuthScreen;
