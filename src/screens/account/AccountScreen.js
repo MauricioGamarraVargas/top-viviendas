@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import Account from '../../components/account/Account';
 
 class AccountScreen extends Component {
+  
   render() {
     return(
       <View>

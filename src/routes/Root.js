@@ -1,23 +1,31 @@
-import React, { Component } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import AccountStack from './AccountStack';
-import AuthStack from './AuthStack';
-import 'react-native-gesture-handler';
+import React, { Component } from "react";
+import "react-native-gesture-handler";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import AccountStack from "./AccountStack";
+import AuthStack from "./AuthStack";
+import TabNavigator  from "./TabNavigator";
 
 const Drawer = createDrawerNavigator();  
 
 const Root = () => (
-  <Drawer.Navigator initialRouteName="account">
+  <Drawer.Navigator initialRouteName="login">
+    <Drawer.Screen
+    options={{
+      drawerItemStyle: {display: "none"},
+      headerShown: false
+    }}
+    name="login"
+    component={AuthStack} 
+    />
     <Drawer.Screen 
-      name="account"
+      name="home" 
+      options={{ drawerLabel: 'Ofertas',headerShown: false }}
+      component={TabNavigator} />
+    <Drawer.Screen 
+      name="accountScreen"
       options={{ drawerLabel: 'Account',headerShown: false }}
       component={AccountStack}
-    /> 
-    <Drawer.Screen
-      name="SecondPage"
-        options={{ drawerLabel: 'Second page Option',headerShown: false }}
-      component={AuthStack} />
+    />     
   </Drawer.Navigator>
 )
 
