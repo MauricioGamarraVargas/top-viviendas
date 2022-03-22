@@ -8,8 +8,8 @@ const Maps = () => {
       <MapView style={styles.map} 
         provider={PROVIDER_GOOGLE}
         initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
+          latitude: -17.414,
+          longitude: -66.1653,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421
         }}

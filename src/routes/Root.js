@@ -4,6 +4,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import AccountStack from "./AccountStack";
 import AuthStack from "./AuthStack";
 import TabNavigator  from "./TabNavigator";
+import BuyerStack from "./BuyerSctack";
 
 const Drawer = createDrawerNavigator();  
 
@@ -23,10 +24,18 @@ const Root = () => (
       component={TabNavigator} />
     <Drawer.Screen 
       name="accountScreen"
-      options={{ drawerLabel: 'Account',headerShown: false }}
+      options={{ drawerLabel: 'Cuenta',headerShown: false }}
       component={AccountStack}
-    />     
+    />   
+    <Drawer.Screen
+      options={{
+        drawerItemStyle: {display: "none"},
+        headerShown: false
+      }}
+      name="buyer"
+      component={BuyerStack}
+    />
   </Drawer.Navigator>
-)
+);
 
 export default Root;
