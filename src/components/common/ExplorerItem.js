@@ -100,7 +100,7 @@ const ExplorerItem = (props) => {
           </View>
         </View>
       </View>
-        <Button style={styles.buttonStyle}>Mas información</Button>
+        <Button style={styles.buttonStyle} onPress={() => props.onPressHomeDetails()}>Mas información</Button>
     </View>
   )
 }

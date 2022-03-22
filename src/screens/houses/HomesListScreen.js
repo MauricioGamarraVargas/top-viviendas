@@ -1,9 +1,9 @@
 import React from "react";
 import HomesList from "../../components/homes/HomesList";
 
-const HomesListScreen = () => {
+const HomesListScreen = (props) => {
   return(
-    <HomesList />
+    <HomesList navigation={props.navigation} />
   )
 }
 

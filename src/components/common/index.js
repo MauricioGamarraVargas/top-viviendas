@@ -5,3 +5,5 @@ export * from './FieldText';
 export * from './Card';
 export * from './ExplorerItem';
 export * from './Maps';
+export * from './ImagePreview';
+export * from './ButtonBottom';
