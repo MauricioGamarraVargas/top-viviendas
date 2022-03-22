@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "top-viviendas",
-    "slug": "inmoviliaria",
+    "name": "topviviendas",
+    "slug": "topviviendas",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,9 +20,12 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+      "package": "com.bitproject.topviviendas",
+      "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDG9ulS2AA3tdrQjbEnBdHSJfOf3vzvcpg"
+        }
       }
     },
     "web": {
